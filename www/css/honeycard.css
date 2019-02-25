@@ -1,0 +1,119 @@
+.honey {
+    margin: 2rem 0;
+    /*background-color: #c81d17;*/
+}
+
+.honey-card {
+    position: relative;
+    height: 25rem;
+    width: 20rem;
+    margin: auto;
+    overflow: hidden;
+}
+
+.honey-card:hover .honey-overlay {
+    display: block;
+    top: 10%;
+    transition: top;
+    transition-timing-function: ease-out;
+    transition-duration: 1000ms;
+}
+.honey-card:hover .honey-front{
+    color: #a5a5a5;
+}
+.honey-card:hover .honey-img{
+    opacity: .5;
+}
+.honey-card:hover #honey-back > g > path.c{
+    fill:#fbfbfb;
+}
+.honey-card:hover #honey-back > g > path.d{
+    fill:#862d2d;
+}
+
+.honey-back, #honey-back {
+    width: 100%;
+    height: 100%;
+}
+
+.honey-back {
+    position: absolute;
+}
+
+.honey-front {
+    position: absolute;
+    z-index: 2;
+    width: 60%;
+    height: 100%;
+    bottom: 0;
+    left: 49%;
+    top: 30%;
+    transform: translate(-50%, 0);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    text-align: center;
+    overflow: hidden;
+}
+
+.honey-img > img {
+    height: 155px;
+    width: 180px;
+    border-radius: 7px;
+}
+
+.honey-img {
+    margin: 1rem 0;
+    padding-top: 1rem;
+}
+
+.honey-h {
+    text-transform: uppercase;
+    width: 100%;
+    max-height: 32px;
+    font-weight: 600;
+}
+
+.honey-about {
+    width: 100%;
+    max-height: 1.5rem;
+}
+
+.honey-overlay {
+    /*background-color: #0b0b0b;*/
+    /*opacity: .5;*/
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.2em;
+    color: #ff6c00;
+    top: 30%;
+    transition: top;
+    transition-timing-function: ease-out;
+    transition-duration: 4000ms;
+}
+.honey-link-detail{
+    top: 35%;
+    position: inherit;
+    border: 1px #cacaca solid;
+    border-radius: 100%;
+    width: 2rem;
+    margin: auto;
+}
+.honey-link-detail a{
+    color: #007affb0;
+}
+.honey-price {
+    top: 40%;
+    position: inherit;
+}
+
+.honey-submit {
+    top: 45%;
+    position: inherit;
+}
